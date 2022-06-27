@@ -13,7 +13,6 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v1
-      - run: echo $GITHUB_SHA >> public/index.html
 
       - name: packages install
         run: yarn install
