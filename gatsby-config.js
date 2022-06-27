@@ -3,7 +3,7 @@ module.exports = {
     title: `Kyubum_J Blog`,
     author: {
       name: `Kyubum Jang`,
-      summary: `의미있는 것을 개발하기 위 노력합니다.`,
+      summary: `의미있는 것을 개발하기 위해 노력합니다.`,
     },
     description: `하나씩 만들어가는 블로그`,
     siteUrl: `https://kyubumjang.github.io/`,
