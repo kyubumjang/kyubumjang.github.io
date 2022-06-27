@@ -3,7 +3,8 @@ name: gatsby deploy
 on:
   push:
     branches: [main]
-
+  pull_request:
+    branches: [main]
 jobs:
   deploy:
     name: deploy
@@ -11,7 +12,8 @@ jobs:
 
     steps:
       - name: checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
+      - run: echo $GITHUB_SHA >> public/index.html
 
       - name: packages install
         run: yarn install
@@ -22,7 +24,7 @@ jobs:
           GH_API_KEY: ${{ secrets.API_KEY }}
 
       - name: deploy
-        uses: maxheld83/ghpages@v0.2.1
+        uses: maxheld83/ghpages@v0.3.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PAT: ${{ secrets.API_KEY }}
