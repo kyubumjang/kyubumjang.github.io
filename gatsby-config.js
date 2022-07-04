@@ -9,6 +9,10 @@ module.exports = {
     siteUrl: `https://kyubumjang.github.io/`,
     social: {
       twitter: `kyubum_j`,
+      github: `kyubumjang`,
+      facebook: `kyubumJ`,
+      linkedin: `kyubumjang`,
+      instagram: `kyubum_j`,
     },
   },
   plugins: [
