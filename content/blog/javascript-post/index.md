@@ -1,6 +1,7 @@
 ---
 title: 프론트엔드 개발자의 언어 Javascript
 date: '2022-07-05'
+description: 'JavaScript에 대해서 알아봅시다.'
 ---
 
 ## JavaScript의 탄생 배경
